@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+/*  main page */
+section {
+    padding: 0;
+    margin-top: 50px; 
+    position: relative; 
+    width: 100%;
+}
+/* p for animation */
+p {
+    margin-top: 10px;
+}
+/* animation p */
+.mainp {
+    font-size: 30px;
+    color: #844b9c;
+    text-align: center;
+    word-break: keep-all;white-space: nowrap;
+    overflow: hidden;
+}
+/* animation main page p*/
+.anim-type {
+    animation: typewriter 4s steps(200) 1s 1 normal both;
+}
+/* h1,h2 for animation */
+.line {
+    position: relative;
+    width: 16em;
+    margin: 35px auto;
+    font-size: 90px;
+    text-align: center; 
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+}
+/* animation main page h1,h2 p*/
+.anim-typewriter {
+    animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+@keyframes typewriter {
+    from {
+          width: 0;
+    }
+    to {
+          width: 100%;
+    }
+}
+/* ul animation */
+ul {
+    font-size: 50px;
+    color: #844b9c;
+    text-align: center;
+}
+.ulanimation, .ulanimation span {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+.ulanimation span { display: inline-block }
+
+.fadein { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
+/* work page */
+.workproject {
+    text-align: center;
+    margin-top: 20px;
+    color: #7d339b;
+    font-size: 50px;
+}
+.box {
+    background: rgb(194, 164, 206);
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    height: 300px;
+    margin-top: 30px;
+    margin: 40px;
+    position: relative;
+    width: 500px;
+}
+.box1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,2);
+  }
+.image {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+.efect {
+    overflow: hidden;
+}
+.efect img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+.efect:hover img {
+    transform: scale(1.5);
+}
+/* nav bar */
+header {
+    padding: 20px;
+    letter-spacing: 5px;
+    word-spacing: 15px;
+    text-align: end;
+    font-size: 18px;
+    background-color: rgb(153, 132, 173);
+}
+.b-site-nav__link {
+    text-decoration: none;
+    color: darkorchid;
+}
+.b-site-nav__link:visited{
+    color: rgb(79, 35, 116);
+}
+/* contact form  */
+.envelope{
+    width:500px;
+    height:300px;
+    background-color:#b99bc4;
+    margin: 15% auto;
+    position:relative;
+    cursor:pointer;
+    z-index:1;
+  }
+  .envelope:before{
+    content:"";
+    top:0;
+    right:0;
+    z-index:3;
+    position:absolute;
+    border-left:500px solid transparent;
+    border-bottom:300px solid #9a67ad;
+  }
+  .envelope:after{
+    content:"";
+    top:0;
+    left:0;
+    z-index:3;
+    position:absolute;
+    border-right:500px solid transparent;
+    border-bottom:300px solid #9a67ad;
+  }
+  .back{
+    position:absolute;
+    top:0;
+    z-index:-1;
+    transform-origin:top;
+    border-top:150px solid #d7b9e2;
+    border-left:250px solid transparent;
+    border-right:250px solid transparent;
+    transition: all 1s ease-in-out;
+    transform: rotateX(180deg);
+  }
+  .letter{
+    position:relative;
+    top:0;
+    padding:20px 10px;
+    width:400px;
+    height:200px;
+    overflow:hidden;
+    z-index:2;
+    margin: 0 auto;
+    background-color:#f5ede3;
+    transition: all 1s ease-in-out;
+    border: 1px solid rgb(191, 144, 212);
+  }
+  label{
+    color: #b3aba1;
+    margin:0 20px;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 0px #fff;
+    font-size: 13px;
+  }
+  input,textarea{
+    width: 90%;
+    height:35px;
+    display:block;
+    margin: 5px auto;
+    padding:5px;
+    background:none;
+    outline:  none;
+    color: #968d81;
+    border: 1px solid #f8f5f1;
+  }
+  textarea{
+    height:105px;
+    max-height:105px;
+    max-width:90%;
+    background:repeating-linear-gradient(to bottom, transparent, transparent 20px, #ddd 20px, #ddd 21px);
+    line-height:20px;
+  }
+  input[type=submit]{
+    color: #caa8da;
+    cursor:pointer;
+    position:relative;
+    text-transform: uppercase;
+  }
+  .envelope:hover .letter{
+    top:-300px;
+    height:500px;
+  }
+  .letter:hover input[type=submit]{
+    z-index:10;
+    transition: all .5s ease-in-out;
+  }
+/* footer */
+footer {
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    background-color: rgb(153, 132, 173);
+    color: rgb(255, 255, 255);
+    bottom: 0;
+}
+.contactpage {
+    text-decoration: none;
+    padding: 40px;
+    color: #844b9c;
+    font-size: 20px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+.contactpage:hover {
+    color: bisque;
+}
+.contactpage:visited {
+    color: #182ead;
+}
