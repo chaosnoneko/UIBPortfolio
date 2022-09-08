@@ -95,6 +95,18 @@ header {
 .b-site-nav__link:visited {
   color: rgb(79, 35, 116);
 }
+
+@media (max-width: 600px) {
+  .header {
+    margin-bottom: 10px;
+  }
+  .b-site-nav__link, b-site-nav__link:visited{
+    height: 70%;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
+
 /* contact form  */
 .envelope {
   width: 500px;
@@ -217,6 +229,17 @@ footer {
 }
 .contactpage:visited {
   color: #182ead;
+}
+@media (max-width: 600px) {
+  .footer {
+    padding: 20px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+  }
+  .contactpage {
+    font-size: 1rem;
+  }
 }
 
 /*work pages */
