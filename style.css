@@ -117,7 +117,7 @@ header {
   cursor: pointer;
   z-index: 1;
 }
-.envelope:before {
+/* .envelope:before {
   content: "";
   top: 0;
   right: 0;
@@ -134,7 +134,7 @@ header {
   position: absolute;
   border-right: 500px solid transparent;
   border-bottom: 300px solid #9a67ad;
-}
+} */
 .back {
   position: absolute;
   top: 0;
@@ -201,10 +201,10 @@ input[type="submit"] {
   top: -300px;
   height: 500px;
 }
-.letter:hover input[type="submit"] {
+/* .letter:hover input[type="submit"] {
   z-index: 10;
   transition: all 0.5s ease-in-out;
-}
+} */
 /* footer */
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 footer {
