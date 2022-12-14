@@ -82,6 +82,7 @@ ul {
 /* nav bar */
 header {
   position: fixed;
+  width: 100%;
   padding: 20px;
   letter-spacing: 5px;
   word-spacing: 15px;
