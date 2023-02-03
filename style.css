@@ -81,16 +81,20 @@ ul {
 }
 /* nav bar */
 header {
-  padding: 20px;
+ 
+  width: 100%;
   letter-spacing: 5px;
   word-spacing: 15px;
   text-align: end;
-  font-size: 18px;
+  font-size: 2.5em;
   background-color: rgb(153, 132, 173);
 }
 .b-site-nav__link {
   text-decoration: none;
-  color: darkorchid;
+  color: rgb(58, 28, 28);
+}
+.b-site-nav__link:hover{
+  color: rgb(185, 75, 32);
 }
 .b-site-nav__link:visited {
   color: rgb(79, 35, 116);
@@ -117,24 +121,17 @@ header {
   cursor: pointer;
   z-index: 1;
 }
-/* .envelope:before {
-  content: "";
-  top: 0;
-  right: 0;
-  z-index: 3;
-  position: absolute;
-  border-left: 500px solid transparent;
-  border-bottom: 300px solid #9a67ad;
+.envelope {
+  max-width: 100%;
+  box-sizing: border-box; 
+  width: 500px;
+  height: 300px;
+  background-color: #b99bc4;
+  margin: 15% auto;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
 }
-.envelope:after {
-  content: "";
-  top: 0;
-  left: 0;
-  z-index: 3;
-  position: absolute;
-  border-right: 500px solid transparent;
-  border-bottom: 300px solid #9a67ad;
-} */
 .back {
   position: absolute;
   top: 0;
@@ -201,10 +198,14 @@ input[type="submit"] {
   top: -300px;
   height: 500px;
 }
-/* .letter:hover input[type="submit"] {
-  z-index: 10;
-  transition: all 0.5s ease-in-out;
-} */
+
+@media only screen and (max-width: 1000px) {
+  .envelope {
+    display: none;
+  }
+
+}
+
 /* footer */
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 footer {
@@ -260,7 +261,6 @@ footer {
 .flex-container a {
   cursor: pointer;
   background: #e7dcf1;
-  /* padding: 5px 10px 5px; */
   flex: 50%;
   border-radius: 10px;
   border: 1px solid;
@@ -275,7 +275,6 @@ footer {
   padding: 0;
 }
 .efect img {
-  /* width: 100%; */
   transition: 0.5s all ease-in-out;
 }
 .efect:hover img {
