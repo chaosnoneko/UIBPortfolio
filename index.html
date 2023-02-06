@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <script src="./theme.js"></script>
     <title>Portfolio</title>
 </head>
+
 <body class="l-body">
     <div class="l-wrapper">
         <header class="b-site-header">
@@ -22,26 +24,42 @@
         <div id="shape"></div>
         <main role="main" class="l-main b-page">
             <section class="b-intro">
-                <h1 class="line anim-typewriter">Hi there, I'm Dani!</h1>
-                <p class="mainp anim-type">I'm an Accountant by profession and on a path to become a great Web developer.</p><p class="mainp anim-type"> I am a person who loves building user-friendly webpages. I also really like <a target="_blank"
-                        href="https://codepen.io/chaosnoneko"
-                        title="MyCodePen">drawing with CSS</a>.  </p>
-                <p class="mainp anim-type">I'm currently interested in learning more about accessibility and CSS/JS
+                <h1 class="line anim-typewriter">
+                    <a href="" class="typewrite" data-period="2000"
+                        data-type='[ "Hi, Im Dani", "I am Creative.", "I Love Design.", "I Love to Develop Websites." ]'>
+                        <span class="wrap"></span>
+                    </a>
+                </h1>
+                <img id="myImage" class="profilepic" src="./images/20.JPG" style="display: none;" alt="Image">
+                <p class="mainp anim-type">I'm an Accountant by profession <br> on my way to becoming a great web
+                    developer.</p>
+                <p class="mainp anim-type"> I am a person who loves building user-friendly websites. <br>I also really
+                    like <a target="_blank" href="https://codepen.io/chaosnoneko" title="MyCodePen">drawing with
+                        CSS</a>. </p>
+                <p class="mainp anim-type">I'm currently interested in learning more about accessibility and <br>CSS/JS
                     animations.</p>
                 <h2 class="line anim-typewriter">I'm also learning...</h2>
                 <ul class="ulanimation fadein text">
                     <li>Calligraphy,</li>
-                    <li>Japanese language & </li>
-                    <li>Video Editing.</li>
+                    <li>Japanese language</li>
+                    <li>Video Editing</li>
                 </ul>
             </section>
         </main>
     </div>
+    <br><br><br><br>
     <footer>
-        <a target="_blank" class="contactpage" href="https://www.linkedin.com/in/y-hristonova-210332205/" ><i class="fa-brands fa-linkedin"></i></a>
-        <a target="_blank" class="contactpage" href="https://github.com/chaosnoneko"><i class="fa-brands fa-github"></i></a>
-        <a target="_blank" class="contactpage" href="https://codepen.io/chaosnoneko"><i class="fa-brands fa-codepen"></i></a>
-        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script></p>
-    </footer> 
+        <a target="_blank" class="contactpage" href="https://www.linkedin.com/in/y-hristonova-210332205/"><i
+                class="fa-brands fa-linkedin"></i></a>
+        <a target="_blank" class="contactpage" href="https://github.com/chaosnoneko"><i
+                class="fa-brands fa-github"></i></a>
+        <a target="_blank" class="contactpage" href="https://codepen.io/chaosnoneko"><i
+                class="fa-brands fa-codepen"></i></a>
+        <p>Copyright &copy;
+            <script>document.write(new Date().getFullYear())</script>
+        </p>
+    </footer>
+    <script src="./mainpage.js"></script>
 </body>
+
 </html>

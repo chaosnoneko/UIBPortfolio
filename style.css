@@ -29,8 +29,9 @@ p {
 }
 /* h1,h2 for animation */
 .line {
+  margin-top: 3em;
   position: relative;
-  width: 16em;
+  width: 10em;
   margin: 35px auto;
   font-size: 90px;
   text-align: center;
@@ -38,9 +39,17 @@ p {
   overflow: hidden;
   transform: translateY(-50%);
 }
+@media (max-width: 1000px) {
+  .line {
+    font-size: 1.5em;
+  }
+  .mainp {
+    font-size: 0.9em;
+  }
+}
 /* animation main page h1,h2 p*/
 .anim-typewriter {
-  animation: typewriter 4s steps(40) 1s 1 normal both,
+  animation: typewriter 2s steps(40) 1s 1 normal both,
     blinkTextCursor 500ms steps(40) infinite normal;
 }
 @keyframes typewriter {
@@ -53,13 +62,14 @@ p {
 }
 /* ul animation */
 ul {
-  font-size: 50px;
+  text-decoration: none;
+  font-size: 2rem;
   color: #844b9c;
   text-align: center;
 }
 .ulanimation,
 .ulanimation span {
-  animation-duration: 3s;
+  animation-duration: 10s;
   animation-fill-mode: both;
 }
 
@@ -79,32 +89,36 @@ ul {
     opacity: 1;
   }
 }
+/* image */
+.profilepic {
+  border-radius: 40em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
 /* nav bar */
 header {
- 
   width: 100%;
-  letter-spacing: 5px;
-  word-spacing: 15px;
+  word-spacing: 0.3em;
   text-align: end;
   font-size: 2.5em;
   background-color: rgb(153, 132, 173);
 }
 .b-site-nav__link {
   text-decoration: none;
-  color: rgb(58, 28, 28);
+  color: rgb(96, 14, 190);
 }
-.b-site-nav__link:hover{
-  color: rgb(185, 75, 32);
+.b-site-nav__link:hover {
+  color: rgb(185, 176, 172);
 }
 .b-site-nav__link:visited {
-  color: rgb(79, 35, 116);
+  color: rgb(27, 25, 29);
 }
 
 @media (max-width: 600px) {
-  .header {
-    margin-bottom: 10px;
-  }
-  .b-site-nav__link, b-site-nav__link:visited{
+  .b-site-nav__link,
+  b-site-nav__link:visited {
     height: 70%;
     width: 100%;
     font-size: 1.5rem;
@@ -123,7 +137,7 @@ header {
 }
 .envelope {
   max-width: 100%;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   width: 500px;
   height: 300px;
   background-color: #b99bc4;
@@ -203,13 +217,12 @@ input[type="submit"] {
   .envelope {
     display: none;
   }
-
 }
 
 /* footer */
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 footer {
-  font-size: 25px;
+  font-size: 1em;
   width: 100%;
   text-align: center;
   position: fixed;
@@ -219,17 +232,23 @@ footer {
 }
 .contactpage {
   text-decoration: none;
-  padding: 40px;
-  color: #844b9c;
-  font-size: 20px;
+  padding: 3em;
+  color: black;
+  font-size: 30px;
   word-spacing: 10px;
   letter-spacing: 5px;
 }
-.contactpage:hover {
-  color: bisque;
-}
 .contactpage:visited {
-  color: #182ead;
+  color: #233131;
+}
+.fa-linkedin:hover:hover {
+  color: #110bad;
+}
+.fa-github:hover {
+  color: white;
+}
+.fa-codepen:hover {
+  color: white;
 }
 @media (max-width: 600px) {
   .footer {
@@ -294,7 +313,7 @@ footer {
     height: 70%;
     width: 100%;
   }
-  .workproject{
+  .workproject {
     font-size: 1.5rem;
   }
 }
