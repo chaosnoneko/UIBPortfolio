@@ -20,22 +20,29 @@
         <a class="b-site-nav__link" href="./contact.html">Contact</a>
       </nav>
     </header>
+    <!-- new contact form -->
+    <form class="postcard" action="">
+      <div class="receiver absolute">
+        <label for="r-name" >Name: </label>
+        <input type="text" name="receiver-name" placeholder="">
+      </div>
+      <div class="sender absolute">
+        <label for="s-name" >Email: </label>
+        <input type="email" name="sender-name" placeholder="">
+      </div>
+      <div class="reply absolute">
+      </div>
+      <div class="message absolute">
+        <label for="t-message" >Your message: </label>
+        <br>
+        <textarea name="message" rows="12" cols="50" placeholder="Hello! Write your message here!"></textarea>
+      </div>
+      <div class="send-btn absolute">
+        <button type="submit" name="button">Send your message >>></button>
+      </div>
+    </form>
 
-    <section class="container">
-      <section class="form-container ">
-        <form>
-          <div class="form-heading">
-            <h1> Get in touch</h1>
-            <p class="stamp"><img class="postmark" src="./images/21.png"></p>
-          </div>
-          <input type="text" class=" form-input right" id="input-name" placeholder="Name"></input>
-          <input type="text" class="form-input right" id="input-company_name" placeholder="Company Name"></input>
-          <input type="email" class="form-input right email-input" id="input-email" placeholder="Email"></input>
-          <textarea class="message-box" class="right" name="message" type="text" id="input-message" placeholder="Message"></textarea>
-          <input type="submit" class="btn btn_contact right" value="Submit" id="input-submit"></input>
-        </form>
-      </section>
-    </section>
+
     <!-- <br><br><br><br> -->
     <!-- <div class="envelope" title="">
       <div class="back"></div>

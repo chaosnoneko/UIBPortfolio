@@ -60,3 +60,5 @@ window.onload = function() {
 setTimeout(function(){
   document.getElementById("myImage").style.display = "block";
 }, 1000);
+
+
