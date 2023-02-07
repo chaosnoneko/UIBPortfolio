@@ -100,7 +100,7 @@ ul {
 /* nav bar */
 header {
   width: 100%;
-  word-spacing: 0.3em;
+  word-spacing: 0.9em;
   text-align: end;
   font-size: 2.5em;
   background-color: rgb(153, 132, 173);
@@ -126,7 +126,222 @@ header {
 }
 
 /* contact form  */
-.envelope {
+/* new style postcard */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.form-container {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfMVx65iXtOiBCF778euOnZ3eCE48yJzwYXA&usqp=CAU");
+  background-size: 30%;
+  border: solid white 5px;
+  width: 75vw;
+  height: 52.5vw;
+  max-width: 90rem;
+  max-height: 63rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 2.3rem 3.7rem rgba(115, 12, 211, 0.19);
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 4fr 4fr 4fr 1fr;
+  row-gap: 1.4rem;
+  width: 70vw;
+  height: 47vw;
+  max-width: 84rem;
+  max-height: 58.8rem;
+  background-color: white;
+}
+
+.form-heading {
+  grid-column: 1/-1;
+  grid-row: 1;
+  align-self: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 3.7rem 3.7rem 0;
+}
+
+.form-heading h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 5.1rem;
+  font-weight: 300;
+  justify-self: start;
+  align-self: center;
+}
+
+.stamp {
+  justify-self: end;
+  width: 9rem;
+  font-weight: 300;
+}
+.postmark{
+  justify-self: end;
+  width: 9rem;
+  font-weight: 300;
+}
+input,
+textarea {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: inherit;
+  font-size: 1.8rem;
+  border: none;
+}
+
+.form-input:hover,
+textarea:hover {
+  outline: solid #c9a3db 3px;
+}
+
+.message-box {
+  grid-column: 1;
+  grid-row: 2/-1;
+  padding: 2.3rem;
+  border-right: solid #cecece 1px;
+  height: 90%;
+  align-self: center;
+  margin: 0 0 3.7rem 3.7rem;
+}
+
+.right {
+  grid-column: 2;
+  margin-right: 3.7rem;
+}
+
+.form-input {
+  justify-self: center;
+  align-self: end;
+  padding: 2.3rem;
+  width: 90%;
+
+  border-bottom: solid #cecece 1px;
+}
+
+.btn_contact,
+.btn_contact:link,
+.btn_contact:visited {
+  cursor: pointer;
+  height: 75%;
+  width: 95%;
+  padding: 2.3rem 0;
+  background-color: #781d94;
+  border: solid #470979 3px;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+  justify-self: start;
+  align-self: end;
+  margin-bottom: 3.7rem;
+  transition: all 0.3s;
+}
+
+
+
+.btn_contact:active {
+  border: solid #809bce 3px;
+  background-color: white;
+  color: #809bce;
+}
+
+@media (max-width: 1050px) {
+  html {
+    font-size: 50%;
+  }
+
+  .form-heading {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 2.3rem 2.3rem 0;
+  }
+
+  input,
+  textarea {
+    font-size: 1.3rem;
+  }
+
+  .message-box {
+    margin:0 0 2.3rem 2.3rem;
+  }
+  .btn_contact, .btn_contact:link, .btn_contact:visited {
+    margin-bottom: 2.3rem;
+    height: auto;
+    padding: 1.8rem;
+  }
+}
+
+@media(max-width: 780px) {
+  .form-container {
+    width: 75vw;
+    height: 150vw;
+  }
+
+  form {
+    width: 70vw;
+    height: 145vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-heading{
+    display: block;
+    font-size: 3.6rem;
+    padding: 3.5rem 0;
+  }
+  .form-heading h1{
+    padding:0;
+  }
+    .stamp{
+      display: none;
+    }
+
+  .message-box {
+    grid-row: 5/9;
+    border: solid #cecece 1px;
+    width: 90%;
+    height: 90%;
+    justify-self: center;
+    align-self: start;
+  }
+
+  .right {
+    grid-column: 1;
+    margin:0;
+  }
+
+  .form-input {
+    border: solid #cecece 1px;
+  }
+
+  .message-box{
+    margin:0;
+  }
+
+  input, textarea {
+    height: 100%;
+    font-size: 1.8rem;
+  }
+
+  .btn_contact, .btn_contact:hover, .btn_contact:visited {
+    justify-self: center;
+    width: 90%;
+    margin-bottom: 3.7rem;
+  }
+
+
+/* .envelope {
   width: 500px;
   height: 300px;
   background-color: #b99bc4;
@@ -217,7 +432,7 @@ input[type="submit"] {
   .envelope {
     display: none;
   }
-}
+} */
 
 /* footer */
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
